@@ -21,7 +21,6 @@
   transition: linear 0.5s;
   &:hover {
     background: $violet_gradient_dark;
-    // background: darken($color: $violet, $amount: 10);
   }
   &:active{
     transform: translateY(15px);
@@ -36,7 +35,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: $white;
-  // position: relative;
 }
 
 h2 {
@@ -51,21 +49,6 @@ h3 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-}
-
-h4 {
-  // margin: 0;
-  // font-weight: 900;
-  // font-size: 18px;
-  // line-height: 21px;
-}
-
-h5 {
-  // margin: 0;
-  // font-weight: bold;
-  // font-size: 14px;
-  // line-height: 16px;
-  // text-transform: uppercase;
 }
 
 .txt {
