@@ -1,0 +1,303 @@
+@import "base";
+@import "header";
+@import "footer";
+
+// main------------------------------------------------
+// professional========================================
+.professional {
+  width: 100%;
+  margin: 72px 0;
+  display: flex;
+  justify-content: center;
+  background: $dark_gradient, url("../assets/main_bg.jpg");
+  background-position: 0 0, 0 -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    width: 1312px;
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    .content {
+      max-width: 416px;
+      height: 360px;
+      color: $white;
+      .txt {
+        margin-top: 24px;
+        padding-right: 10px;
+      }
+      button {
+        width: 204px;
+        margin-top: 32px;
+        @extend %for-btn;
+      }
+    }
+  }
+}
+
+// wonders=============================================
+.wonders {
+  width: 100%;
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  color: $text;
+  .container {
+    width: 1312px;
+    height: 494px;
+    padding: 48px 0 32px;
+    h2 {
+      margin: 32px 0 56px;
+      text-align: center;
+    }
+    .h3 {
+      display: none;
+    }
+  }
+}
+.wonders-swiper.swiper-container {
+  width: 100%;
+  height: 318px;
+  .swiper-slide {
+    width: 192px;
+    cursor: pointer;
+    .slide-img {
+      width: 192px;
+      height: 192px;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: linear 0.5s;
+    }
+    &:hover .slide-img {
+      box-shadow: $box_shadow;
+    }
+    h4 {
+      margin: 16px 0;
+    }
+  }
+  .wonders-pagination.swiper-pagination {
+    .swiper-pagination-bullet {
+      background: $violet_gradient;
+      opacity: 0.5;
+      width: 10px;
+      height: 10px;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+  }
+  .wonders-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    top: 102px;
+    background: $white;
+    box-shadow: $box_shadow;
+    &.swiper-button-prev {
+      left: 0;
+    }
+    &.swiper-button-next {
+      right: 0;
+    }
+    &::after {
+      font-size: 16px;
+      font-weight: bolder;
+      color: $violet;
+    }
+  }
+}
+
+// request-info========================================
+.request-info {
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  color: $text;
+  .container {
+    width: 1312px;
+    min-height: 672px;
+    padding: 48px 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 32px;
+  }
+}
+.request__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    margin: 32px 0 24px;
+  }
+  .request__desc-image {
+    width: 467px;
+    height: 336px;
+    margin-top: 40px;
+    background-image: url("../assets/icons/frame.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.request__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed $border;
+    font-style: italic;
+    color: $text;
+    padding: 0 16px;
+    &.mess {
+      margin-top: 32px;
+    }
+    &::placeholder {
+      opacity: 0.5;
+      color: $web_grey;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  button {
+    margin: 48px 0;
+    width: 183px;
+    @extend %for-btn;
+  }
+}
+
+@media (max-width: 1349.98px) {
+  // main------------------------------------------------
+  // professional========================================
+  .professional {
+    margin: 24px 0;
+    background-position: 0 0, center;
+    .container {
+      height: 512px;
+      margin-top: 173px;
+      .content {
+        padding: 0 10%;
+        h1 {
+          font-size: 28px;
+          line-height: 32px;
+        }
+        .txt {
+          padding: 0;
+          font-size: 14px;
+        }
+        button {
+          width: 192px;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 8px 24px;
+        }
+      }
+    }
+  }
+
+  // wonders=============================================
+  .wonders {
+    margin-top: 24px;
+    .container {
+      width: 80%;
+      height: 434px;
+      padding: 24px 0;
+      h2 {
+        display: none;
+      }
+      .h3 {
+        margin: 16px 0 24px;
+        display: block;
+      }
+    }
+  }
+  .wonders-swiper.swiper-container {
+    height: 232px;
+    .swiper-slide {
+      width: 152px;
+      .slide-img {
+        width: 152px;
+        height: 152px;
+      }
+      h4 {
+        margin: 12px 0;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .wonders-button {
+      display: none;
+    }
+  }
+
+  // request-info========================================
+  .request-info {
+    margin-top: 0;
+    .container {
+      width: 80%;
+      min-height: 894px;
+      padding: 24px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .request__desc {
+    flex-direction: column-reverse;
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .request__desc-image {
+      width: 343px;
+      height: 246px;
+      margin-top: 24px;
+    }
+  }
+  .request__form {
+    margin-top: 16px;
+    button {
+      width: 192px;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 8px 24px;
+    }
+  }
+}
+
+@media (max-width: 639.98px) {
+  // main------------------------------------------------
+  // professional========================================
+  .professional {
+    .container {
+      .content {
+        padding: 0 2.5%;
+      }
+    }
+  }
+
+  // wonders=============================================
+  .wonders {
+    .container {
+      width: 95%;
+    }
+  }
+
+  // request-info========================================
+  .request-info {
+    .container {
+      width: 95%;
+    }
+  }
+}

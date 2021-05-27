@@ -1,0 +1,32 @@
+// footer------------------------------------------------
+footer {
+  width: 100%;
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  background: $dark_bg;
+  p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $white;
+    margin: 64px 0 32px;
+  }
+}
+
+@media (max-width: 1349.98px) {
+  // footer------------------------------------------------
+  footer {
+    margin-top: 32px;
+    p{
+      line-height: 24px;
+      margin: 32px 0;
+    }
+  }
+}
+
+@media (max-width: 639.98px) {
+  // footer------------------------------------------------
+  footer {
+  }
+}

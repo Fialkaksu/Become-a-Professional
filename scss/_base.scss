@@ -1,0 +1,76 @@
+%for-roboto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+%for-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $white;
+  border-radius: 50px;
+  border: transparent;
+  outline: none;
+  background: $violet_gradient;
+  box-shadow: $box_shadow;
+  cursor: pointer;
+  transition: linear 0.5s;
+  &:hover {
+    background: $violet_gradient_dark;
+    // background: darken($color: $violet, $amount: 10);
+  }
+  &:active{
+    transform: translateY(15px);
+  }
+}
+
+body {
+  @extend %for-roboto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $white;
+  // position: relative;
+}
+
+h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h4 {
+  // margin: 0;
+  // font-weight: 900;
+  // font-size: 18px;
+  // line-height: 21px;
+}
+
+h5 {
+  // margin: 0;
+  // font-weight: bold;
+  // font-size: 14px;
+  // line-height: 16px;
+  // text-transform: uppercase;
+}
+
+.txt {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
